@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto
+}
+
+:root {
+    --main-color: #03fff2;
+    --second-color: rgb(41, 56, 82);
+    --main-transition: 0.3s
+}
+
+.container {
+    margin: 0 80px
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background-color: var(--main-color);
+    border-radius: 4px;
+    border: transparent;
+    transition: var(--main-transition)
+}
+button:hover {
+    background-color: #02ede1;
+    cursor: pointer
+}
+
+h2 {
+    font-weight: normal
+}
+
+
+/* Create a phone */
+
+.phone {
+    position: relative;
+    top: 12px;
+    height: 23.7em;
+    width: 11em;
+    background-color: var(--main-color);
+    border: #000 5px solid;
+    border-radius: 33px;
+    transition: var(--main-transition)
+}
+
+.phone:hover {
+    transform: rotate(10deg);
+    cursor: pointer;
+    background-image: linear-gradient(var(--main-color) , #03fff2 ,  var(--second-color))
+}
+
+.phone .up {
+    background-color: #000;
+    height: 16px;
+    width: 6rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: -1px
+}
+.phone .up::before {
+    content: '';
+    position: absolute;
+    left: 66%;
+    top: 2px;
+    height: 9px;
+    width: 8px;
+    background-color: #97979754;
+    border-radius: 50%
+}
+.phone .up::after {
+    content: '';
+    position: absolute;
+    left: 20%;
+    top: 4px;
+    height: 6px;
+    width: 38px;
+    background-color: #97979754;
+    border-radius: 25px
+}
+
+/* Create a phone */
